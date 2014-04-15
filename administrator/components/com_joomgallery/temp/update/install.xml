@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="language" client="both" method="upgrade">
+    <name>Russian</name>
+    <tag>ru-RU</tag>
+    <version>1.0</version>
+    <creationDate>2010-05-17</creationDate>
+    <author>JoomGallery::ProjectTeam</author>
+    <authorEmail>team@joomgallery.net</authorEmail>
+    <authorUrl>http://www.joomgallery.net/</authorUrl>
+    <copyright>Released under GNU GPL Public License</copyright>
+    <license>GNU GPL</license>
+    <description>Russian Translation for JoomGallery 1.5.6.x</description>
+    <administration>
+      <files folder="admin">
+        <filename>ru-RU.com_joomgallery.ini</filename>
+        <filename>ru-RU.com_joomgallery.menu.ini</filename>
+      </files>
+    </administration>
+    <site>
+      <files folder="site">
+        <filename>ru-RU.com_joomgallery.ini</filename>
+        <filename>ru-RU.com_joomgallery.exif.ini</filename>
+        <filename>ru-RU.com_joomgallery.iptc.ini</filename>
+      </files>
+    </site>
+    <params />
+</install>

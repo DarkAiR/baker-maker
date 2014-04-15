@@ -1,0 +1,6 @@
+<Files ~ "\.(php|php3|php5|php4|phtml)$">
+deny from all
+</Files>
+<Files "images.php">
+Allow from all
+</Files>

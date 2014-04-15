@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" method="upgrade">
+  <name>JoomCategories for JoomGallery</name>
+  <author>JoomGallery::Project Team</author>
+  <creationDate>21.12.2010</creationDate>
+  <authorEmail>team@joomgallery.net</authorEmail>
+  <authorUrl>www.joomgallery.net</authorUrl>
+  <copyright>(C) 2009 - 2010 JoomGallery::Project Team</copyright>
+  <license>This module is released under the GNU/GPL License</license>
+  <version>1.5.6.1</version>
+  <description>JoomCategories</description>
+  <files>
+    <filename module="mod_joomcat">mod_joomcat.php</filename>
+    <filename>index.html</filename>
+    <filename>helper.php</filename>
+    <filename>LICENSE.TXT</filename>
+    <filename>changelog.php</filename>
+    <filename>tmpl/default.php</filename>
+    <filename>tmpl/index.html</filename>
+    <filename>assets/index.html</filename>
+    <filename>assets/mod_joomcat.js</filename>
+    <filename>assets/close.png</filename>
+  </files>
+  <languages>
+   <language tag="en-GB">languages/en-GB/en-GB.mod_joomcat.ini</language>
+   <language tag="de-DE">languages/de-DE/de-DE.mod_joomcat.ini</language>
+  </languages>
+  <params>
+    <param type="spacer" default="JC_COMMON_PARAMETER_LBL" label="" description="" />
+    <param name="moduleclass_sfx" type="text" default="" label="JC_MODULE_CLASS_SUFFIX_LBL" description="JC_MODULE_CLASS_SUFFIX_DESC" />
+    <param name="cfg_itemid" type="text" default="" label="JC_ITEMID_LBL" description="JC_ITEMID_DESC"/>  
+    <param name="cfg_catmode" type="list" default="0" label="JC_CATMODE_LBL" description="JC_CATMODE_DESC">
+      <option value="0">JC_CATMODE_LAST_ADDED_LBL</option>
+      <option value="1">JC_CATMODE_TOP_RATED_LBL</option>
+      <option value="2">JC_CATMODE_MOST_VIEWED_LBL</option>
+    </param>
+    <param name="cfg_count" type="text" default="4" label="JC_COUNT_LBL" description="JC_COUNT_DESC"/>
+    <param name="cfg_rootcat" type="text" default="0" label="JC_ROOTCAT_LBL" description="JC_ROOTCAT_DESC"/>    
+    <param name="cfg_blacklist_cats" type="text" default="" label="JC_BLACKLIST_CATS_LBL" description="JC_BLACKLIST_CATS_DESC" />
+    <param name="cfg_showthumb" type="list" default="0" label="JC_SHOWTHUMB_LBL" description="JC_SHOWTHUMB_DESC">
+      <option value="0">JC_SHOWTHUMB_RANDOM_LBL</option>
+      <option value="1">JC_SHOWTHUMB_CATEGORY_LBL</option>
+      <option value="2">JC_SHOWTHUMB_NONE_LBL</option>
+    </param>
+    <param name="cfg_showimglink" type="list" default="1" label="JC_SHOWIMGLINK_LBL" description="JC_SHOWIMGLINK_DESC">
+      <option value="0">JC_SHOWIMGLINK_NONE_LBL</option>
+      <option value="1">JC_SHOWIMGLINK_DETAIL_LBL</option>
+      <option value="2">JC_SHOWIMGLINK_CATEGORY_LBL</option>
+      <option value="3">JC_SHOWIMGLINK_SLIDESHOW_LBL</option>
+      <option value="4">JC_SHOWIMGLINK_NEW_WINDOW_LBL</option>
+      <option value="5">JC_SHOWIMGLINK_JS_WINDOW_LBL</option>
+      <option value="6">JC_SHOWIMGLINK_DHTML_BOX_LBL</option>
+      <option value="7">JC_SHOWIMGLINK_THICKBOX_LBL</option>
+      <option value="8">JC_SHOWIMGLINK_SLIMBOX_LBL</option>
+      <option value="9">JC_SHOWIMGLINK_PLUGIN_LBL</option>
+    </param>
+    <param name="cfg_showimgcat" type="radio" default="1" label="JC_SHOWIMGCAT_LBL" description="JC_SHOWIMGCAT_DESC">
+      <option value="0">JC_NO_LBL</option>
+      <option value="1">JC_YES_LBL</option>
+    </param>
+    <param name="cfg_showimgcatlink" type="radio" default="1" label="JC_SHOWIMGCATLINK_LBL" description="JC_SHOWIMGCATLINK_DESC">
+      <option value="0">JC_NO_LBL</option>
+      <option value="1">JC_YES_LBL</option>
+    </param>
+    <param name="cfg_showcatrate" type="radio" default="0" label="JC_SHOWCATRATE_LBL" description="JC_SHOWCATRATE_DESC">
+      <option value="0">JC_NO_LBL</option>
+      <option value="1">JC_YES_LBL</option>
+    </param>
+    <param name="cfg_showcathits" type="radio" default="0" label="JC_SHOWCATHITS_LBL" description="JC_SHOWCATHITS_DESC">
+      <option value="0">JC_NO_LBL</option>
+      <option value="1">JC_YES_LBL</option>
+    </param>    
+    <param name="cfg_showcatdescr" type="radio" default="0" label="JC_SHOWCATDESCR_LBL" description="JC_SHOWCATDESCR_DESC">
+      <option value="0">JC_NO_LBL</option>
+      <option value="1">JC_YES_LBL</option>
+    </param>
+    <param name="cfg_showimgdescr" type="radio" default="0" label="JC_SHOWIMGDESCR_LBL" description="JC_SHOWIMGDESCR_DESC">
+      <option value="0">JC_NO_LBL</option>
+      <option value="1">JC_YES_LBL</option>
+    </param>
+    <param name="cfg_access" type="radio" default="1" label="JC_ACCESS_LBL" description="JC_ACCESS_DESC">
+      <option value="0">JC_NO_LBL</option>
+      <option value="1">JC_YES_LBL</option>
+    </param>
+    <param type="spacer" default="JC_VIEW_PARAMETER_LBL" label="" description="" />
+    <param name="cfg_columns" type="text" default="1" label="JC_COLUMNS_LBL" description="JC_COLUMNS_DESC"/>
+    <param name="cfg_thumbnailimgtype" type="list" default="thumb" label="JC_THUMBNAILIMGTYPE_LBL" description="JC_THUMBNAILIMGTYPE_DESC">
+      <option value="thumb">JC_THUMBNAILIMGTYPE_THUMB_LBL</option>
+      <option value="img">JC_THUMBNAILIMGTYPE_IMG_LBL</option>
+      <option value="orig">JC_THUMBNAILIMGTYPE_ORIG_LBL</option>
+    </param>
+    <param name="cfg_cropimg" type="radio" default="0" label="JC_CROPIMG_LBL" description="JC_CROPIMG_DESC">
+      <option value="0">JC_NO_LBL</option>
+      <option value="1">JC_YES_LBL</option>
+    </param>
+    <param name="cfg_cropimgwidth" type="text" default="50" label="JC_CROPIMGWIDTH_LBL" description="JC_CROPIMGWIDTH_DESC"/>
+    <param name="cfg_cropimgheight" type="text" default="50" label="JC_CROPIMGHEIGHT_LBL" description="JC_CROPIMGHEIGHT_DESC"/>
+    <param name="cfg_thumbnaildim" type="list" default="0" label="JC_THUMBNAILDIM_LBL" description="JC_THUMBNAILDIM_DESC">
+      <option value="0">JC_THUMBNAILDIM_ORG_LBL</option>
+      <option value="1">JC_THUMBNAILDIM_HEIGHT_LBL</option>
+      <option value="2">JC_THUMBNAILDIM_WIDTH_LBL</option>
+    </param>
+    <param name="cfg_thumbnaildimvalue" type="text" default="150" label="JC_THUMBNAILDIMVALUE_LBL" description="JC_THUMBNAILDIMVALUE_DESC"/>
+    <param name="cfg_imgposition" type="list" default="1" label="JC_IMGPOSITION_LBL" description="JC_IMGPOSITION_DESC">
+      <option value="1">JC_IMGPOSITION_ABOVE_LBL</option>
+      <option value="2">JC_LEFT_LBL</option>
+      <option value="3">JC_RIGHT_LBL</option>
+      <option value="4">JC_BELOW_LBL</option>
+    </param>
+    <param name="cfg_horalign" type="list" default="center" label="JC_HORALIGN_LBL" description="JC_HORALIGN_DESC">
+      <option value="left">JC_HORALIGN_LEFT_LBL</option>
+      <option value="center">JC_HORALIGN_CENTER_LBL</option>
+      <option value="right">JC_HORALIGN_RIGHT_LBL</option>
+    </param>
+    <param name="cfg_imgshowborder" type="radio" default="1" label="JC_IMGSHOWBORDER_LBL" description="JC_IMGSHOWBORDER_DESC">
+      <option value="0">JC_NO_LBL</option>
+      <option value="1">JC_YES_LBL</option>
+    </param>
+    <param name="cfg_imgborderwidth" type="text" default="1px" label="JC_IMGBORDERWIDTH_LBL" description="JC_IMGBORDERWIDTH_DESC"/>
+    <param name="cfg_imgborderstyle" type="list" default="solid" label="JC_IMGBORDERSTYLE_LBL" description="JC_IMGBORDERSTYLE_DESC">
+        <option value="solid">solid</option>
+        <option value="dotted">dotted</option>
+        <option value="dashed">dashed</option>
+        <option value="double">double</option>
+        <option value="groove">groove</option>
+        <option value="ridge">ridge</option>
+        <option value="inset">inset</option>
+        <option value="outset">outset</option>
+    </param>
+    <param name="cfg_imgbordercolor" type="text" default="#C3C3C3" label="JC_IMGBORDERCOLOR_LBL" description="JC_IMGBORDERCOLOR_DESC"/>
+    <param name="cfg_imgpadding" type="text" default="3px" label="JC_IMGPADDING_LBL" description="JC_IMGPADDING_DESC"/>
+    <param name="cfg_imgbgcolor" type="text" default="#FFFFFF" label="JC_IMGBGCOLOR_LBL" description="JC_IMGBGCOLOR_DESC"/>
+    <param name="cfg_showshorttext" type="radio" default="0" label="JC_SHOWSHORTTEXT_LBL" description="JC_SHOWSHORTTEXT_DESC">
+      <option value="0">JC_NO_LBL</option>
+      <option value="1">JC_YES_LBL</option>
+    </param>
+    <param name="cfg_showhorruler" type="radio" default="1" label="JC_SHOWHORRULER_LBL" description="JC_SHOWHORRULER_DESC">
+      <option value="0">JC_NO_LBL</option>
+      <option value="1">JC_YES_LBL</option>
+    </param>
+    <param name="cfg_txtresetliststyle" type="radio" default="0" label="JC_TXTRESETLISTSTYLE_LBL" description="JC_TXTRESETLISTSTYLE_DESC">
+      <option value="0">JC_NO_LBL</option>
+      <option value="1">JC_YES_LBL</option>
+    </param>
+    <param name="cfg_showvml" type="list" default="0" label="JC_SHOWVML_LBL" description="JC_SHOWVML_DESC">
+      <option value="0">JC_VMLLINKNONE_LBL</option>
+      <option value="1">JC_VMLLINKGALLERY_LBL</option>
+      <option value="2">JC_VMLLINKROOTCAT_LBL</option>
+    </param>
+    <param name="cfg_vmlalign" type="list" default="right" label="JC_VMLALIGN_LBL" description="JC_VMLALIGN_DESC">
+      <option value="left">JC_HORALIGN_LEFT_LBL</option>
+      <option value="center">JC_HORALIGN_CENTER_LBL</option>
+      <option value="right">JC_HORALIGN_RIGHT_LBL</option>
+    </param>
+    <param name="cfg_vmltext" type="text" default="View more ..." label="JC_VMLTEXT_LBL" description="JC_VMLTEXT_DESC"/>
+    <param type="spacer" default="JC_SLD_VIEW_PARAMETER_LBL" label="" description="" />
+    <param name="cfg_sldimgsort" type="list" default="0" label="JC_SLDIMGSORT_LBL" description="JC_SLDIMGSORT_DESC">
+      <option value="rand()">JC_SLDIMGSORT_RAND_LBL</option>
+      <option value="jg.id DESC">JC_SLDIMGSORT_IDDESC_LBL</option>
+      <option value="jg.id ASC">JC_SLDIMGSORT_IDASC_LBL</option>
+      <option value="jg.imgtitle DESC">JC_SLDIMGSORT_TITLEDESC_LBL</option>
+      <option value="jg.imgtitle ASC">JC_SLDIMGSORT_TITELASC_LBL</option>
+      <option value="jg.imgdate DESC">JC_SLDIMGSORT_DATEDESC_LBL</option>
+      <option value="jg.imgdate ASC">JC_SLDIMGSORT_DATEASC_LBL</option>
+      <option value="jg.hits DESC">JC_SLDIMGSORT_HITSDESC_LBL</option>
+      <option value="jg.hits ASC">JC_SLDIMGSORT_HITSASC_LBL</option>
+      <option value="vote DESC, jg.imgvotesum DESC">JC_SLDIMGSORT_VOTEDESC_LBL</option>
+      <option value="vote ASC, jg.imgvotesum ASC">JC_SLDIMGSORT_VOTEASC_LBL</option>
+      <option value="jg.imgvotes DESC">JC_SLDIMGSORT_VOTECOUNTDESC_LBL</option>
+      <option value="jg.imgvotes ASC">JC_SLDIMGSORT_VOTECOUNTASC_LBL</option>
+    </param>
+    <param name="cfg_sldmaximg" type="text" default="0" label="JC_SLDMAXIMG_LBL" description="JC_SLDMAXIMG_DESC"/>
+    <param name="cfg_sldjgsettings" type="radio" default="1" label="JC_SLDJGSETTINGS_LBL" description="JC_SLDJGSETTINGS_DESC">
+      <option value="0">JC_NO_LBL</option>
+      <option value="1">JC_YES_LBL</option>
+    </param>
+    <param name="cfg_sldtimer" type="text" default="6000" label="JC_SLDTIMER_LBL" description="JC_SLDTIMER_DESC"/>
+    <param name="cfg_sldtransition" type="list" default="0" label="JC_SLDTRANSITION_LBL" description="JC_SLDTRANSITION_DESC">
+      <option value="0">fade</option>
+      <option value="1">fadeslideleft</option>
+      <option value="2">crossfade</option>
+      <option value="3">continuoushorizontal</option>
+      <option value="4">continuousvertical</option>
+      <option value="5">fadebg</option>
+    </param>
+    <param name="cfg_sldtranstime" type="text" default="2000" label="JC_SLDTRANSTIME_LBL" description="JC_SLDTRANSTIME_DESC"/>
+    <param name="cfg_sldmaxdimauto" type="radio" default="0" label="JC_SLDMAXDIMAUTO_LBL" description="JC_SLDMAXDIMAUTO_DESC">
+      <option value="0">JC_NO_LBL</option>
+      <option value="1">JC_YES_LBL</option>
+    </param>
+    <param name="cfg_sldwidth" type="text" default="640" label="JC_SLDWIDTH_LBL" description="JC_SLDWIDTH_DESC"/>
+    <param name="cfg_sldheight" type="text" default="480" label="JC_SLDHEIGHT_LBL" description="JC_SLDHEIGHT_DESC"/>
+    <param name="cfg_sldinfopane" type="radio" default="0" label="JC_SLDINFOPANE_LBL" description="JC_SLDINFOPANE_DESC">
+      <option value="0">JC_NO_LBL</option>
+      <option value="1">JC_YES_LBL</option>
+    </param>
+    <param name="cfg_sldcarousel" type="radio" default="0" label="JC_SLDCAROUSEL_LBL" description="JC_SLDCAROUSEL_DESC">
+      <option value="0">JC_NO_LBL</option>
+      <option value="1">JC_YES_LBL</option>
+    </param>
+    <param name="cfg_sldarrows" type="radio" default="0" label="JC_SLDARROWS_LBL" description="JC_SLDARROWS_DESC">
+      <option value="0">JC_NO_LBL</option>
+      <option value="1">JC_YES_LBL</option>
+    </param>
+  </params>
+</install>

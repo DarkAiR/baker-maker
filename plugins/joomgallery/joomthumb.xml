@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="joomgallery" method="upgrade">
+  <name>JoomGallery - JoomThumb</name>
+  <author>DarkAiR</author>
+  <creationDate>26.01.2011</creationDate>
+  <copyright>Copyright (C) 2011 Open Source Matters. All rights reserved.</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <authorEmail>darkair2@gmail.com</authorEmail>
+  <authorUrl>www.vkedah.ru</authorUrl>
+  <version>1.0</version>
+  <description>This Plugin displays additional fields in admin of photo.</description>
+  <files>
+    <filename plugin="joomthumb">joomthumb.php</filename>
+  </files>
+  <languages folder="language">
+    <!--language tag="en-GB">en-GB.plg_joomgallery_joomjcom.ini</language-->
+  </languages>
+  <params>
+  </params>
+</install>

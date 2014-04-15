@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" method="upgrade">
+  <name>JoomMenu</name>
+  <author>JoomGallery::Project Team</author>
+  <creationDate>21.12.2010</creationDate>
+  <authorEmail>team@joomgallery.net</authorEmail>
+  <authorUrl>www.joomgallery.net</authorUrl>
+  <copyright>(C) 2009 - 2010 JoomGallery::Project Team</copyright>
+  <license>This module is released under the GNU/GPL License</license>
+  <version>1.5.6.1</version>
+  <description>JoomMenu</description>
+  <files>
+    <filename module="mod_joommenu">mod_joommenu.php</filename>
+    <filename>index.html</filename>
+    <filename>helper.php</filename>
+    <filename>tmpl/default.php</filename>
+    <filename>tmpl/index.html</filename>
+    <filename>assets/index.html</filename>
+    <filename>assets/mod_joommenu.js</filename>
+    <filename>assets/close.png</filename>
+  </files>
+  <languages>
+  </languages>
+  <params>
+  </params>
+</install>
