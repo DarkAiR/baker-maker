@@ -27,9 +27,9 @@ body, html {
 body {
     background-color: #25cad3;
     color: #ffffff;
-    font-size: 12px;
-    _font-family: "PF Agora Slab Pro","Tahoma","Verdana","Arial","sans-serif";
-    line-height: 15px;
+    font-size: 14px;
+    font-family: "PF Agora Slab Pro","Tahoma","Verdana","Arial","sans-serif";
+    line-height: 18px;
 }
 
 p {
@@ -47,7 +47,7 @@ a:hover {
 .outer-cont {
     position:relative;
     height:100%;
-    overflow: hidden;
+    _overflow: hidden;
     _background:rgba(255,0,0,0.2);
 }
 .inner-cont {
@@ -73,7 +73,7 @@ a:hover {
     font-family: "PF Agora Slab Pro MedItalic","Tahoma","Verdana","Arial","sans-serif";
 }
 .logo {
-    width: 460px;
+    _width: 460px;
     height: 380px;
     margin: auto;
     _background: rgba(0,255,255,0.2);
