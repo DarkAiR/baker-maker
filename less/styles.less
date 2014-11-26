@@ -1,0 +1,224 @@
+@contW: 1280px;
+@menuLeft: 132px;
+
+
+
+@font-face {
+    font-family: "Bingley";
+    src: url(../fonts/bingley.otf) format("opentype");
+}
+@font-face {
+    font-family: "Bingley Italic";
+    src: url(../fonts/bingley_italic.otf) format("opentype");
+}
+
+body, html {
+    width: 100%;
+    //height: 100%;
+    padding: 0px;
+    margin: 0px;
+    //overflow-x: hidden;
+    //overflow-y: auto;
+}
+
+/**
+ * Основной размер шрифта нужно задавать в %, а не EM, иначе старые IE
+ * при изменении размера шрифта будут сходить с ума
+ */
+body {
+    background-color: #f6f6f6;
+    color: #000;
+    font-size: 14px;
+    font-family: "Bingley Italic","Tahoma","Verdana","Arial","sans-serif";
+    line-height: 18px;
+}
+
+
+
+
+
+.block1, .block2, .block3, .block4, .block5, .block6, .block7, .block8, .block9, .block10, .block11, .block12, .block13, .block14 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -@contW/2;
+    width: @contW;
+} 
+
+@h1: 774px;
+.block1 {
+    top: 0px;
+    background: url(../img/bg_01.jpg) left top no-repeat;
+    height: @h1;
+}
+@h2: 564px;
+.block2 {
+    top: @h1;
+    background: url(../img/bg_02.jpg) left top no-repeat;
+    height: @h2;
+}
+@h3: 694px;
+.block3 {
+    top: @h1 + @h2;
+    background: url(../img/bg_03.jpg) left top no-repeat;
+    height: @h3;
+}
+@h4: 962px;
+.block4 {
+    top: @h1 + @h2 + @h3;
+    background: url(../img/bg_04.jpg) left top no-repeat;
+    height: @h4;
+}
+@h5: 969px;
+.block5 {
+    top: @h1 + @h2 + @h3 + @h4;
+    background: url(../img/bg_05.jpg) left top no-repeat;
+    height: @h5;
+}
+@h6: 872px;
+.block6 {
+    top: @h1 + @h2 + @h3 + @h4 + @h5;
+    background: url(../img/bg_06.jpg) left top no-repeat;
+    height: @h6;
+}
+@h7: 694px;
+.block7 {
+    top: @h1 + @h2 + @h3 + @h4 + @h5 + @h6;
+    background: url(../img/bg_07.jpg) left top no-repeat;
+    height: @h7;
+}
+@h8: 816px;
+.block8 {
+    top: @h1 + @h2 + @h3 + @h4 + @h5 + @h6 + @h7;
+    background: url(../img/bg_08.jpg) left top no-repeat;
+    height: @h8;
+}
+@h9: 940px;
+.block9 {
+    top: @h1 + @h2 + @h3 + @h4 + @h5 + @h6 + @h7 + @h8;
+    background: url(../img/bg_09.jpg) left top no-repeat;
+    height: @h9;
+}
+@h10: 868px;
+.block10 {
+    top: @h1 + @h2 + @h3 + @h4 + @h5 + @h6 + @h7 + @h8 + @h9;
+    background: url(../img/bg_10.jpg) left top no-repeat;
+    height: @h10;
+}
+@h11: 1054px;
+.block11 {
+    top: @h1 + @h2 + @h3 + @h4 + @h5 + @h6 + @h7 + @h8 + @h9 + @h10;
+    background: url(../img/bg_11.jpg) left top no-repeat;
+    height: @h11;
+}
+@h12: 969px;
+.block12 {
+    top: @h1 + @h2 + @h3 + @h4 + @h5 + @h6 + @h7 + @h8 + @h9 + @h10 + @h11;
+    background: url(../img/bg_12.jpg) left top no-repeat;
+    height: @h12;
+}
+@h13: 936px;
+.block13 {
+    top: @h1 + @h2 + @h3 + @h4 + @h5 + @h6 + @h7 + @h8 + @h9 + @h10 + @h11 + @h12;
+    background: url(../img/bg_13.jpg) left top no-repeat;
+    height: @h13;
+}
+
+a.anchor {
+    position: absolute;
+    top: 0;
+}
+
+.main-container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    height: @h1 + @h2 + @h3 + @h4 + @h5 + @h6 + @h7 + @h8 + @h9 + @h10 + @h11 + @h12 + @h13;
+}
+@media (min-width: @contW) {
+    .main-container {
+        width: @contW;
+    }
+}
+
+
+.cont {
+    position: relative;
+}
+
+.contacts,
+.contacts * {
+    font-size: 24px;
+    line-height: 36px;
+    color: #060000;
+}
+
+.contacts {
+    position: absolute;
+    text-align: center;
+    left: 620px;
+    top: 655px;
+
+    a {
+        color: #060000;
+        &:hover {
+            text-decoration: none;
+            border-bottom: 1px solid #060000;
+        }
+    }
+}
+
+
+
+ul.menu {
+    font-size: 22px;
+    list-style-type: none;
+    padding: 0;
+    margin: 46px 0 0 @menuLeft;
+    
+    li {
+        color: #fff;
+        
+        a {
+            color: #fff;
+            &:hover {
+                text-decoration: none;
+                border-bottom: 1px solid rgba(255,255,255,0.8);
+            }
+        }
+    }
+}
+
+
+div.navigation {
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    z-index: 2;
+
+    ul.navigation {
+        font-size: 36px;
+        line-height: 30px;
+        height: 30px;
+        list-style-position: inside;
+        color: #fff;
+        display: inline-block;
+        width: 260px;
+        margin-left: -130px;
+        padding: 0px 8px;
+        background: rgba(0,0,0,0.4);
+
+        border-radius: 0px 0px 10px 10px;
+        -moz-border-radius: 0px 0px 10px 10px;
+        -webkit-border-radius: 0px 0px 10px 10px;
+
+        li {
+            margin: 0 8px;
+            float:left;
+            list-style-type: circle;
+            &.active {
+                list-style-type: disc;
+            }
+        }
+    }
+}
