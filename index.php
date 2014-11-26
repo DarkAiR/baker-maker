@@ -62,41 +62,32 @@
 </head>
 
 <body>
-    <div class='container outer-cont'>
-        <div class='inner-cont content'>
-            <div class='logo'></div>
-            <div class='switcher'>
-                <div id='sw-rus'>RUS</div>
-                <div id='sw-eng'>ENG</div>
+    <div class='container-fluid'>
+            <div class='row  block1'>
+                <ul class='menu'>
+                    <li><a href='#contacts'>Контакты</a></li>
+                </ul>
             </div>
-            <div class='info'>
-                <div class='rus' style='display:none;'>
-                    <p>
-                        Спасибо, что заглянули к нам в мастерскую!<br>
-                        <i>Сейчас наш сайт находится в разработке!</i><br>
-                        Следите за нами на <a href="http://www.facebook.com/bakermakermoscow" target="_blank">Facebook</a> и <a href="http://instagram.com/baker_maker/" target="_blank">Instagram</a>
-                    </p>
-                    <p>
-                        Звоните и заказывайте наши сладости по тел.: <b>+7 926 625 75 90</b><br>
-                        Пишите нам письма на <a href="mailto:info@baker-maker.ru">info@baker-maker.ru</a>
-                    </p>
-                    <p>
-                        Портфолио с нашими работами вы можете посмотреть <a href="http://www.facebook.com/bakermakermoscow/photos_stream" target="_blank">тут</a>
-                    </p>
-                </div>
-                <div class='eng' style='display:none;'>
-                    <p>
-                        Thank you for your visit!<br>
-                        <i>Our page is under construction and it's coming soon!</i><br>
-                        Follow us on <a href="http://www.facebook.com/bakermakermoscow" target="_blank">Facebook</a> and <a href="http://instagram.com/baker_maker/" target="_blank">Instagram</a>
-                    </p>
-                    <p>
-                        Fancy to try our cakes, call us <b>+7 926 625 75 90</b><br>
-                        or e-mail us <a href="mailto:info@baker-maker.ru">info@baker-maker.ru</a>
-                    </p>
-                    <p>
-                        Want to see them first - <a href="http://www.facebook.com/bakermakermoscow/photos_stream" target="_blank">click here</a>
-                    </p>
+            <div class='row  block2'></div>
+            <div class='row  block3'></div>
+            <div class='row  block4'></div>
+            <div class='row  block5'></div>
+            <div class='row  block6'></div>
+            <div class='row  block7'></div>
+            <div class='row  block8'></div>
+            <div class='row  block9'></div>
+            <div class='row  block10'></div>
+            <div class='row  block11'></div>
+            <div class='row  block12'></div>
+
+            <a name='contacts'></a>
+            <div class='row  block13 cont'>
+                <div class='contacts'>
+                    +8 926 625 75 90
+                    <br/>
+                    <a href="mailto:info@baker-maker.ru">info@baker-maker.ru</a>
+                    <br/>
+                    <a href="http://www.facebook.com/bakermakermoscow" target="_blank">Facebook</a> и <a href="http://instagram.com/baker_maker/" target="_blank">Instagram</a>
                 </div>
             </div>
         </div>

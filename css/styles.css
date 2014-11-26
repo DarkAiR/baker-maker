@@ -1,14 +1,10 @@
 @font-face {
-    font-family: "PF Agora Slab Pro";
-    src: url(../fonts/PFAgoraSlabPro-Reg.ttf) format("truetype");
+    font-family: "Bingley";
+    src: url(../fonts/bingley.otf) format("opentype");
 }
 @font-face {
-    font-family: "PF Agora Slab Pro BoldItalic";
-    src: url(../fonts/PFAgoraSlabPro-BoldItalic.ttf) format("truetype");
-}
-@font-face {
-    font-family: "PF Agora Slab Pro MedItalic";
-    src: url(../fonts/PFAgoraSlabPro-MedItalic.ttf) format("truetype");
+    font-family: "Bingley Italic";
+    src: url(../fonts/bingley_italic.otf) format("opentype");
 }
 
 body, html {
@@ -25,81 +21,125 @@ body, html {
  * при изменении размера шрифта будут сходить с ума
  */
 body {
-    background-color: #25cad3;
-    color: #ffffff;
+    background-color: #f6f6f6;
+    color: #000;
     font-size: 14px;
-    font-family: "PF Agora Slab Pro","Tahoma","Verdana","Arial","sans-serif";
+    font-family: "Bingley Italic","Tahoma","Verdana","Arial","sans-serif";
     line-height: 18px;
 }
 
-p {
-    padding-bottom: 5px;
-}
-a, a:link, a:visited, a:hover {
-    color:#fff;
-    text-decoration: none;
-    border-bottom: 1px solid rgba(255,255,255,0.3);
-}
-a:hover {
-    border-bottom: 1px solid rgba(255,255,255,0.6);
-}
-
-.outer-cont {
-    position:relative;
-    height:100%;
-    _overflow: hidden;
-    _background:rgba(255,0,0,0.2);
-}
-.inner-cont {
-    position: absolute;
-    height: 600px;
+.container-fluid {
     width: 100%;
-    top: 50%;
-    left: 50%;
-    margin-top: -300px;
-    margin-left: -50%;
-    _background:rgba(0,255,0,0.4);
+}
+@media (min-width: 1280px) {
+    .container-fluid {
+        width: 1280px;
+    }
 }
 
-.content {
-    text-align: center;
-    font-family: "PF Agora Slab Pro","Tahoma","Verdana","Arial","sans-serif";
+.block1 {
+    background: url(../img/bg_01.jpg) left top no-repeat;
+    width: 1280px;
+    height: 774px;
 }
-.content a,
-.content b {
-    font-family: "PF Agora Slab Pro BoldItalic","Tahoma","Verdana","Arial","sans-serif";
+.block2 {
+    background: url(../img/bg_02.jpg) left top no-repeat;
+    width: 1280px;
+    height: 564px;
 }
-.content i {
-    font-family: "PF Agora Slab Pro MedItalic","Tahoma","Verdana","Arial","sans-serif";
+.block3 {
+    background: url(../img/bg_03.jpg) left top no-repeat;
+    width: 1280px;
+    height: 694px;
 }
-.logo {
-    _width: 460px;
-    height: 380px;
-    margin: auto;
-    _background: rgba(0,255,255,0.2);
+.block4 {
+    background: url(../img/bg_04.jpg) left top no-repeat;
+    width: 1280px;
+    height: 962px;
 }
-.logo.rus {
-    background: url(../img/logo-r.png) center center no-repeat;
+.block5 {
+    background: url(../img/bg_05.jpg) left top no-repeat;
+    width: 1280px;
+    height: 969px;
 }
-.logo.eng {
-    background: url(../img/logo-e.png) center center no-repeat;
+.block6 {
+    background: url(../img/bg_06.jpg) left top no-repeat;
+    width: 1280px;
+    height: 872px;
+}
+.block7 {
+    background: url(../img/bg_07.jpg) left top no-repeat;
+    width: 1280px;
+    height: 694px;
+}
+.block8 {
+    background: url(../img/bg_08.jpg) left top no-repeat;
+    width: 1280px;
+    height: 816px;
+}
+.block9 {
+    background: url(../img/bg_09.jpg) left top no-repeat;
+    width: 1280px;
+    height: 940px;
+}
+.block10 {
+    background: url(../img/bg_10.jpg) left top no-repeat;
+    width: 1280px;
+    height: 868px;
+}
+.block11 {
+    background: url(../img/bg_11.jpg) left top no-repeat;
+    width: 1280px;
+    height: 1054px;
+}
+.block12 {
+    background: url(../img/bg_12.jpg) left top no-repeat;
+    width: 1280px;
+    height: 969px;
+}
+.block13 {
+    background: url(../img/bg_13.jpg) left top no-repeat;
+    width: 1280px;
+    height: 936px;
 }
 
-.switcher {
+.cont {
+    position: relative;
+}
 
+.contacts,
+.contacts * {
+    font-size: 24px;
+    line-height: 36px;
+    color: #060000;
 }
-.switcher > div {
-    display: inline-block;
-    cursor: pointer;
-    padding: 5px 3px 0px 3px;
+.contacts a {
+    color: #060000;
 }
-.switcher .active {
-    font-family: "PF Agora Slab Pro BoldItalic","Tahoma","Verdana","Arial","sans-serif";
+.contacts a:hover {
     text-decoration: none;
-    border-bottom: 1px solid rgba(255,255,255,0.3);
-    line-height: 11px;
+    border-bottom: 1px solid #060000;
 }
 
-.info {
-    padding-top: 40px;
+.contacts {
+    position: absolute;
+    text-align: center;
+    left: 620px;
+    top: 655px;
+}
+
+ul.menu {
+    font-size: 22px;
+    list-style-type: none;
+    padding: 0;
+    margin: 46px 0 0 132px;
+}
+
+ul.menu li,
+ul.menu li a {
+    color: #fff;
+}
+ul.menu li a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,0.8);
 }
