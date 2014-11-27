@@ -8,12 +8,11 @@
     <meta name="author" content="">
     <!-- link rel="shortcut icon" href="assets/ico/favicon.ico" -->
 
-    <meta http-equiv="last-modified" content="2014-11-27@23:00:00" />
-    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="last-modified" content="2014-11-27@23:15:00" />
+    <!--meta http-equiv="cache-control" content="no-cache" /-->
 
-    <meta property="og:title" content="Baker-Maker.ru"/>
+    <meta property="og:title" content="Мастерская сладких идей"/>
     <meta property="og:url" content="http://baker-maker.ru" />
-    <meta property="og:description" content="Baker-Maker.ru"/>
     <meta property="og:image" content="http://baker-maker.ru/img/bg_01.jpg" />
 
     <title>Baker-Maker.ru</title>
