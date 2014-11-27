@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
+    <meta name="description" content="Baker-Maker. Мастерская сладких идей.">
     <meta name="author" content="">
     <!-- link rel="shortcut icon" href="assets/ico/favicon.ico" -->
 
@@ -17,7 +17,7 @@
 
     <meta name="viewport" content="width=1280">
 
-    <title>Baker-Maker.ru</title>
+    <title>Baker-Maker. Мастерская сладких идей.</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap-3.1.1/css/bootstrap.min.css" rel="stylesheet">
