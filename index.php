@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <!-- link rel="shortcut icon" href="assets/ico/favicon.ico" -->
 
-    <title>Starter Template for Bootstrap</title>
+    <title>Baker-Maker.ru</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap-3.1.1/css/bootstrap.min.css" rel="stylesheet">
