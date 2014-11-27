@@ -8,6 +8,11 @@
     <meta name="author" content="">
     <!-- link rel="shortcut icon" href="assets/ico/favicon.ico" -->
 
+    <meta property="og:title" content="Baker-Maker.ru"/>
+    <meta property="og:url" content="http://baker-maker.ru" />
+    <meta property="og:description" content="Baker-Maker.ru"/>
+    <meta property="og:image" content="http://baker-maker.ru/img/bg_01.jpg" />
+
     <title>Baker-Maker.ru</title>
 
     <!-- Bootstrap core CSS -->
