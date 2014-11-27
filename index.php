@@ -14,8 +14,8 @@
     <meta property="og:title" content="Мастерская сладких идей"/>
     <meta property="og:url" content="http://baker-maker.ru" />
     <meta property="og:image" content="http://baker-maker.ru/img/bg_01.jpg" />
-    
-    <!--meta name="viewport" content="width=320, "-->
+    <meta property="og:description" content="Baker-Maker. Мастерская сладких идей."/>
+
     <meta name="viewport" content="width=1280">
 
     <title>Baker-Maker.ru</title>
