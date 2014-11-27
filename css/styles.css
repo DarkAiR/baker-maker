@@ -162,6 +162,7 @@ ul.menu li a:hover {
   border-bottom: 1px solid rgba(255, 255, 255, 0.8);
 }
 div.navigation {
+  display: none;
   position: fixed;
   top: 0px;
   left: 50%;
